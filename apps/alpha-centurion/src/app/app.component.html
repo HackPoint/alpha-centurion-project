@@ -68,46 +68,49 @@
   </div>
 </header>
 
-<!-- Hero -->
+
 <main>
-  <div class="grid grid-cols-2 bg-hero-mobile-pattern md:bg-hero-pattern bg-contain md:h-hero h-mobile-hero">
-    <div class="pt-20 ml-96">
-      <h2 class="text-white text-4xl font-bold">Баня Лукоморье в Архангельске</h2>
+  <!-- Hero -->
+  <div
+    class="md:grid md:grid-cols-2 bg-hero-mobile-pattern md:bg-hero-pattern md:h-hero h-mobile-hero bg-no-repeat md:bg-contain bg-cover bg-center">
+    <div class="md:pt-20 md:ml-96 ml-4 pt-9">
+      <h2 class="text-white md:text-4xl text-2xl font-bold">Баня Лукоморье в Архангельске</h2>
       <div class="flex pt-5">
         <svg class="h-6 w-6 mr-2.5" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M8 0.013504C3.857 0.013504 0.5 3.357 0.5 7.4985C0.5 14.6595 8 23.9985 8 23.9985C8 23.9985 15.5 14.658 15.5 7.4985C15.5 3.3585 12.143 0.013504 8 0.013504ZM8 11.64C6.92587 11.64 5.89574 11.2133 5.13622 10.4538C4.3767 9.69427 3.95 8.66413 3.95 7.59C3.95 6.51588 4.3767 5.48574 5.13622 4.72622C5.89574 3.9667 6.92587 3.54 8 3.54C9.07413 3.54 10.1043 3.9667 10.8638 4.72622C11.6233 5.48574 12.05 6.51588 12.05 7.59C12.05 8.66413 11.6233 9.69427 10.8638 10.4538C10.1043 11.2133 9.07413 11.64 8 11.64Z"
             fill="#FFDA8F" />
         </svg>
-        <span class="text-xl text-white">г. Архангельск, СНТ Транспортник, стр. 11</span>
+        <span class="md:text-xl text-md text-white">г. Архангельск, СНТ Транспортник, стр. 11</span>
       </div>
-      <h3 class="font-bold text-white text-3xl pt-8">
+      <h3 class="font-bold text-white md:text-3xl text-2xl pt-8">
         <span class="font-light">Работаем</span>
         круглосуточно
       </h3>
-      <h3 class="font-bold text-white text-3xl pt-2.5">
+      <h3 class="font-bold text-white md:text-3xl text-2xl pt-2.5">
         <span class="font-light">Цены от</span>
         900 рублей
       </h3>
       <a href="/"
-         class="flex justify-center button w-64 py-4 mt-8">
+         class="flex justify-center button w-2/3 py-4 mt-8">
         Заказать обратный звонок
       </a>
     </div>
+
+    <!--Request call Form-->
     <div class="pt-8 ml-48">
-      <div class="bg-white w-96 h-96 flex flex-col rounded">
+      <div class="bg-white w-96 h-96 md:flex flex-col rounded hidden">
         <div class="w-full h-full"><!--Form content-->
           <h4 class="text-center text-md pt-10">Узнать, свободна ли сауна</h4>
           <div class="flex flex-col pt-2.5">
             <input type="text" placeholder="Ваш телефон"
-                   class="mx-10 rounded bg-yellow-100 border-0 text-md pl-5 pt-2.5 pb-2.5 pt-2.5 mb-2.5">
+                   class="mx-10 rounded bg-yellow-100 border-0 text-md pl-5 pt-2.5 pb-2.5 pt-2.5 mb-2.5 focus:ring-0">
             <input type="text" placeholder="Время посещения сауны"
-                   class="mx-10 rounded bg-yellow-100 border-0 text-md pl-5 pt-2.5 pb-2.5 pt-2.5 mb-2.5">
+                   class="mx-10 rounded bg-yellow-100 border-0 text-md pl-5 pt-2.5 pb-2.5 pt-2.5 mb-2.5 focus:ring-0">
             <input type="text" placeholder="Введите число часов"
-                   class="mx-10 rounded bg-yellow-100 border-0 text-md pl-5 pt-2.5 pb-2.5 pt-2.5 mb-10">
-
+                   class="mx-10 rounded bg-yellow-100 border-0 text-md pl-5 pt-2.5 pb-2.5 pt-2.5 mb-10 focus:ring-0">
             <div class="flex mx-10">
-              <input type="checkbox" class="checkbox w-4 h-4 rounded outline-none mr-2">
+              <input type="checkbox" class="checkbox w-4 h-4 rounded mr-2 focus:ring-1">
               <p class="text-sm w-96">
                 <span class="font-bold">Согласен</span> на обработку и передачу
                 персональных данных в соответствии <br>
@@ -116,11 +119,125 @@
             </div>
           </div>
         </div>
-        <div class="bg-yellow-300 opacity-80 h-14 w-full rounded-br rounded-bl">
+        <div class="bg-primary-yellow h-14 w-full rounded-br rounded-bl">
           <a href="/" class="flex flex-col justify-center text-center h-full">Проверить</a>
         </div>
       </div>
     </div>
-
+    <!--Request call Form-->
   </div>
+  <!--End Hero-->
+
+
+  <!-- Headers -->
+  <section class="flex justify-center mx-96 mt-16 justify-between">
+    <h2 class="text-5xl font-normal">Наши залы</h2>
+    <h4 class="text-xl font-normal underline">
+      <a href="/">Смотреть все залы</a>
+    </h4>
+  </section>
+  <!--Slider-->
+  <section>
+    <!--Cards-->
+    <div class="cards flex justify-center gap-4 mt-5">
+      <!--Arrow left-->
+      <a href="/" class="flex flex-col justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="bg-primary-yellow h-12 py-2 w-12 text-white rounded-full"
+             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 19l-7-7 7-7" />
+        </svg>
+      </a>
+
+      <figure class="flex flex-col w-slider-card">
+        <div class="relative">
+          <img src="./assets/img/img1.png" alt="Русская баня" class="rounded-tl-xl rounded-tr-xl">
+          <a href="/" class="absolute flex py-2.5 h-10 bg-white bg-opacity-40 px-4 rounded-full bottom-4 left-6">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z" fill="#FB8E30"/>
+            </svg>
+            <span class="text-sm px-1">3 человека</span>
+          </a>
+
+          <a href="/" class="absolute flex py-2.5 h-10 bg-white bg-opacity-40 px-4 rounded-full bottom-4 right-6">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 14C6.05208 14 5.14518 13.8154 4.2793 13.4463C3.41341 13.0771 2.66829 12.5804 2.04395 11.9561C1.4196 11.3317 0.922852 10.5866 0.553711 9.7207C0.18457 8.85482 0 7.94792 0 7C0 6.05208 0.18457 5.14518 0.553711 4.2793C0.922852 3.41341 1.4196 2.66829 2.04395 2.04395C2.66829 1.4196 3.41341 0.922852 4.2793 0.553711C5.14518 0.18457 6.05208 0 7 0C7.94792 0 8.85482 0.18457 9.7207 0.553711C10.5866 0.922852 11.3317 1.4196 11.9561 2.04395C12.5804 2.66829 13.0771 3.41341 13.4463 4.2793C13.8154 5.14518 14 6.05208 14 7C14 7.94792 13.8154 8.85482 13.4463 9.7207C13.0771 10.5866 12.5804 11.3317 11.9561 11.9561C11.3317 12.5804 10.5866 13.0771 9.7207 13.4463C8.85482 13.8154 7.94792 14 7 14ZM8.3125 1.75H5.25C5.01302 1.75 4.80794 1.83659 4.63477 2.00977C4.46159 2.18294 4.375 2.38802 4.375 2.625V6.125H3.5C3.26302 6.125 3.05794 6.21159 2.88477 6.38477C2.71159 6.55794 2.625 6.7653 2.625 7.00684C2.625 7.24837 2.71159 7.45345 2.88477 7.62207C3.05794 7.79069 3.26302 7.875 3.5 7.875H4.375V8.75H3.5C3.26302 8.75 3.05794 8.83659 2.88477 9.00977C2.71159 9.18294 2.625 9.3903 2.625 9.63184C2.625 9.87337 2.71159 10.0785 2.88477 10.2471C3.05794 10.4157 3.26302 10.5 3.5 10.5H4.375V11.375C4.375 11.6211 4.45931 11.8285 4.62793 11.9971C4.79655 12.1657 5.00163 12.25 5.24316 12.25C5.4847 12.25 5.69206 12.1657 5.86523 11.9971C6.03841 11.8285 6.125 11.6211 6.125 11.375V10.5H7.875C8.11198 10.5 8.31706 10.4157 8.49023 10.2471C8.66341 10.0785 8.75 9.87337 8.75 9.63184C8.75 9.3903 8.66341 9.18294 8.49023 9.00977C8.31706 8.83659 8.11198 8.75 7.875 8.75H6.125V7.875H8.3125C9.16016 7.875 9.88249 7.5765 10.4795 6.97949C11.0765 6.38249 11.375 5.66016 11.375 4.8125C11.375 3.96484 11.0765 3.24251 10.4795 2.64551C9.88249 2.0485 9.16016 1.75 8.3125 1.75ZM8.3125 6.125H6.125V3.5H8.3125C8.67708 3.5 8.98698 3.6276 9.24219 3.88281C9.4974 4.13802 9.625 4.44792 9.625 4.8125C9.625 5.17708 9.4974 5.48698 9.24219 5.74219C8.98698 5.9974 8.67708 6.125 8.3125 6.125Z" fill="#FB8E30"/>
+            </svg>
+            <span class="text-sm px-1">от 600 руб.</span>
+          </a>
+        </div>
+        <div class="bg-white py-2 pl-10">
+          <h4>Русская баня</h4>
+          <h5 class="text-black opacity-60 text-sm">Русская</h5>
+        </div>
+        <div class="card-footer bg-primary-yellow h-10 w-full rounded-br rounded-bl">
+          <a href="/" class="flex flex-col justify-center text-center h-full">Подробнее</a>
+        </div>
+      </figure>
+
+      <figure class="flex flex-col w-slider-card">
+        <div class="relative">
+          <h3 class="absolute top-0 left-0 px-4 font-semibold py-2 bg-primary-yellow rounded-br-3xl rounded-tl-xl text-sm ">АКЦИЯ</h3>
+          <img src="./assets/img/img2.png" alt="Русская баня" class="rounded-tl-xl rounded-tr-xl">
+          <a href="/" class="absolute flex py-2.5 h-10 bg-white bg-opacity-40 px-4 rounded-full bottom-4 left-6">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z" fill="#FB8E30"/>
+            </svg>
+            <span class="text-sm px-1">3 человека</span>
+          </a>
+
+          <a href="/" class="absolute flex py-2.5 h-10 bg-white bg-opacity-40 px-4 rounded-full bottom-4 right-6">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 14C6.05208 14 5.14518 13.8154 4.2793 13.4463C3.41341 13.0771 2.66829 12.5804 2.04395 11.9561C1.4196 11.3317 0.922852 10.5866 0.553711 9.7207C0.18457 8.85482 0 7.94792 0 7C0 6.05208 0.18457 5.14518 0.553711 4.2793C0.922852 3.41341 1.4196 2.66829 2.04395 2.04395C2.66829 1.4196 3.41341 0.922852 4.2793 0.553711C5.14518 0.18457 6.05208 0 7 0C7.94792 0 8.85482 0.18457 9.7207 0.553711C10.5866 0.922852 11.3317 1.4196 11.9561 2.04395C12.5804 2.66829 13.0771 3.41341 13.4463 4.2793C13.8154 5.14518 14 6.05208 14 7C14 7.94792 13.8154 8.85482 13.4463 9.7207C13.0771 10.5866 12.5804 11.3317 11.9561 11.9561C11.3317 12.5804 10.5866 13.0771 9.7207 13.4463C8.85482 13.8154 7.94792 14 7 14ZM8.3125 1.75H5.25C5.01302 1.75 4.80794 1.83659 4.63477 2.00977C4.46159 2.18294 4.375 2.38802 4.375 2.625V6.125H3.5C3.26302 6.125 3.05794 6.21159 2.88477 6.38477C2.71159 6.55794 2.625 6.7653 2.625 7.00684C2.625 7.24837 2.71159 7.45345 2.88477 7.62207C3.05794 7.79069 3.26302 7.875 3.5 7.875H4.375V8.75H3.5C3.26302 8.75 3.05794 8.83659 2.88477 9.00977C2.71159 9.18294 2.625 9.3903 2.625 9.63184C2.625 9.87337 2.71159 10.0785 2.88477 10.2471C3.05794 10.4157 3.26302 10.5 3.5 10.5H4.375V11.375C4.375 11.6211 4.45931 11.8285 4.62793 11.9971C4.79655 12.1657 5.00163 12.25 5.24316 12.25C5.4847 12.25 5.69206 12.1657 5.86523 11.9971C6.03841 11.8285 6.125 11.6211 6.125 11.375V10.5H7.875C8.11198 10.5 8.31706 10.4157 8.49023 10.2471C8.66341 10.0785 8.75 9.87337 8.75 9.63184C8.75 9.3903 8.66341 9.18294 8.49023 9.00977C8.31706 8.83659 8.11198 8.75 7.875 8.75H6.125V7.875H8.3125C9.16016 7.875 9.88249 7.5765 10.4795 6.97949C11.0765 6.38249 11.375 5.66016 11.375 4.8125C11.375 3.96484 11.0765 3.24251 10.4795 2.64551C9.88249 2.0485 9.16016 1.75 8.3125 1.75ZM8.3125 6.125H6.125V3.5H8.3125C8.67708 3.5 8.98698 3.6276 9.24219 3.88281C9.4974 4.13802 9.625 4.44792 9.625 4.8125C9.625 5.17708 9.4974 5.48698 9.24219 5.74219C8.98698 5.9974 8.67708 6.125 8.3125 6.125Z" fill="#FB8E30"/>
+            </svg>
+            <span class="text-sm px-1">от 600 руб.</span>
+          </a>
+        </div>
+        <div class="bg-white py-2 pl-10">
+          <h4>Турецкий хаммам</h4>
+          <h5 class="text-black opacity-60 text-sm">Хаммам</h5>
+        </div>
+        <div class="card-footer bg-primary-yellow h-10 w-full rounded-br rounded-bl">
+          <a href="/" class="flex flex-col justify-center text-center h-full">Подробнее</a>
+        </div>
+      </figure>
+
+      <figure class="flex flex-col w-slider-card">
+        <div class="relative">
+          <img src="./assets/img/img3.png" alt="Русская баня" class="rounded-tl-xl rounded-tr-xl">
+          <a href="/" class="absolute flex py-2.5 h-10 bg-white bg-opacity-40 px-4 rounded-full bottom-4 left-6">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z" fill="#FB8E30"/>
+            </svg>
+            <span class="text-sm px-1">3 человека</span>
+          </a>
+
+          <a href="/" class="absolute flex py-2.5 h-10 bg-white bg-opacity-40 px-4 rounded-full bottom-4 right-6">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 14C6.05208 14 5.14518 13.8154 4.2793 13.4463C3.41341 13.0771 2.66829 12.5804 2.04395 11.9561C1.4196 11.3317 0.922852 10.5866 0.553711 9.7207C0.18457 8.85482 0 7.94792 0 7C0 6.05208 0.18457 5.14518 0.553711 4.2793C0.922852 3.41341 1.4196 2.66829 2.04395 2.04395C2.66829 1.4196 3.41341 0.922852 4.2793 0.553711C5.14518 0.18457 6.05208 0 7 0C7.94792 0 8.85482 0.18457 9.7207 0.553711C10.5866 0.922852 11.3317 1.4196 11.9561 2.04395C12.5804 2.66829 13.0771 3.41341 13.4463 4.2793C13.8154 5.14518 14 6.05208 14 7C14 7.94792 13.8154 8.85482 13.4463 9.7207C13.0771 10.5866 12.5804 11.3317 11.9561 11.9561C11.3317 12.5804 10.5866 13.0771 9.7207 13.4463C8.85482 13.8154 7.94792 14 7 14ZM8.3125 1.75H5.25C5.01302 1.75 4.80794 1.83659 4.63477 2.00977C4.46159 2.18294 4.375 2.38802 4.375 2.625V6.125H3.5C3.26302 6.125 3.05794 6.21159 2.88477 6.38477C2.71159 6.55794 2.625 6.7653 2.625 7.00684C2.625 7.24837 2.71159 7.45345 2.88477 7.62207C3.05794 7.79069 3.26302 7.875 3.5 7.875H4.375V8.75H3.5C3.26302 8.75 3.05794 8.83659 2.88477 9.00977C2.71159 9.18294 2.625 9.3903 2.625 9.63184C2.625 9.87337 2.71159 10.0785 2.88477 10.2471C3.05794 10.4157 3.26302 10.5 3.5 10.5H4.375V11.375C4.375 11.6211 4.45931 11.8285 4.62793 11.9971C4.79655 12.1657 5.00163 12.25 5.24316 12.25C5.4847 12.25 5.69206 12.1657 5.86523 11.9971C6.03841 11.8285 6.125 11.6211 6.125 11.375V10.5H7.875C8.11198 10.5 8.31706 10.4157 8.49023 10.2471C8.66341 10.0785 8.75 9.87337 8.75 9.63184C8.75 9.3903 8.66341 9.18294 8.49023 9.00977C8.31706 8.83659 8.11198 8.75 7.875 8.75H6.125V7.875H8.3125C9.16016 7.875 9.88249 7.5765 10.4795 6.97949C11.0765 6.38249 11.375 5.66016 11.375 4.8125C11.375 3.96484 11.0765 3.24251 10.4795 2.64551C9.88249 2.0485 9.16016 1.75 8.3125 1.75ZM8.3125 6.125H6.125V3.5H8.3125C8.67708 3.5 8.98698 3.6276 9.24219 3.88281C9.4974 4.13802 9.625 4.44792 9.625 4.8125C9.625 5.17708 9.4974 5.48698 9.24219 5.74219C8.98698 5.9974 8.67708 6.125 8.3125 6.125Z" fill="#FB8E30"/>
+            </svg>
+            <span class="text-sm px-1">от 600 руб.</span>
+          </a>
+        </div>
+        <div class="bg-white py-8"></div>
+        <div class="card-footer bg-primary-yellow h-10 w-full rounded-br rounded-bl">
+          <a href="/" class="flex flex-col justify-center text-center h-full">Подробнее</a>
+        </div>
+      </figure>
+
+      <!--Arrow right-->
+      <a href="/" class="flex flex-col justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="bg-primary-yellow py-2 h-12 w-12 text-white rounded-full"
+             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+    <!--Cards-->
+  </section>
+  <!--End Slider-->
+
+
+  <section class="bg-white shadow">
+
+  </section>
 </main>

@@ -21,14 +21,18 @@ module.exports = {
         'primary': '#f3f3f3',
         'secondary': '#fff',
         'checkbox': '#E6E6E6',
+        'primary-yellow': '#FFDA8F'
       },
       backgroundImage: {
-        'hero-pattern': "url('/assets/img/hero.png')",
-        'hero-mobile-pattern': "url('/assets/img/hero-mobile.png')",
+        'hero-pattern': 'url(\'/assets/img/hero.png\')',
+        'hero-mobile-pattern': 'url(\'/assets/img/hero-mobile.png\')'
       },
       height: {
         hero: '470px',
-        'mobile-hero': '300px'
+        'mobile-hero': '400px'
+      },
+      width: {
+        'slider-card': '330px'
       }
     }
   },

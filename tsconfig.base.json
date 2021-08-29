@@ -15,8 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@acp/shared/ui": ["libs/shared/ui/src/index.ts"],
       "@alpha-centurion-project/api-interfaces": [
         "libs/api-interfaces/src/index.ts"
+      ],
+      "@alpha-centurion-project/shared/storybook": [
+        "libs/shared/storybook/src/index.ts"
       ]
     }
   },

@@ -46,6 +46,9 @@
     "api-interfaces": {
       "tags": []
     },
+    "shared-storybook": {
+      "tags": []
+    },
     "shared-ui": {
       "tags": []
     },

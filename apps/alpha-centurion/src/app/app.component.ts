@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Message } from '@alpha-centurion-project/api-interfaces';
 
 @Component({
-  selector: 'alpha-centurion-project-root',
+  selector: 'alpha-centurion-project',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

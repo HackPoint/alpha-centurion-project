@@ -10,13 +10,12 @@ body {
   height: 100vh;
 }
 
-/*
-.hero {
-  background-image: url("./assets/img/hero.png");
-  height: 470px;
+.button {
+  @apply text-center bg-yellow-200 text-sm cursor-pointer tracking-normal font-light rounded hover:drop-shadow duration-300;
 }
-.hero-mobile {
-  background-image: url("./assets/img/hero-mobile.png");
-  height: 300px;
+
+
+.checkbox {
+  border: 1px solid #E6E6E6;
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.04), 0 0 1px rgba(0, 0, 0, 0.04);
 }
-*/

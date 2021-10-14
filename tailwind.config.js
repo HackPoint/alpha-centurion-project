@@ -19,7 +19,8 @@ module.exports = {
       },
       backgroundColor: {
         'primary': '#f3f3f3',
-        'secondary': '#fff'
+        'secondary': '#fff',
+        'checkbox': '#E6E6E6',
       },
       backgroundImage: {
         'hero-pattern': "url('/assets/img/hero.png')",

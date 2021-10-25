@@ -32,29 +32,36 @@
       }
     ]
   },
-  "projects": {
-    "alpha-centurion": {
-      "tags": []
+  "cli": {
+    "defaultCollection": "@nrwl/angular",
+    "packageManager": "npm"
+  },
+  "defaultProject": "alpha-centurion",
+  "generators": {
+    "@nrwl/angular": {
+      "application": {
+        "linter": "eslint"
+      },
+      "library": {
+        "linter": "eslint"
+      },
+      "storybook-configuration": {
+        "linter": "eslint"
+      }
     },
-    "alpha-centurion-e2e": {
-      "tags": [],
-      "implicitDependencies": ["alpha-centurion"]
+    "@nrwl/angular:application": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
     },
-    "api": {
-      "tags": []
+    "@nrwl/angular:library": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest"
     },
-    "api-interfaces": {
-      "tags": []
-    },
-    "shared-storybook": {
-      "tags": []
-    },
-    "shared-ui": {
-      "tags": []
-    },
-    "shared-ui-e2e": {
-      "tags": [],
-      "implicitDependencies": ["shared-ui"]
+    "@nrwl/angular:component": {
+      "style": "scss"
     }
   }
 }
